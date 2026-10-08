@@ -1,4 +1,4 @@
-package com.hmall.service.impl;
+package com.hmall.trade.service.impl;
 
 import com.hmall.domain.dto.OrderDetailDTO;
 import com.hmall.service.IItemService;

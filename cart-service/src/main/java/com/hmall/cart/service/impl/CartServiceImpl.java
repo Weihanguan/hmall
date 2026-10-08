@@ -98,7 +98,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
                 instance.getUri() +"/items?ids={ids}",
                 HttpMethod.GET,
                 null,
-                new ParameterizedTypeReference<List<ItemDTO>>() {},//反射，课后了解TODO
+                new ParameterizedTypeReference<List<ItemDTO>>() {},//反射，课后了解
                 Map.of("ids", CollUtils.join(itemIds, ","))
         );
 
@@ -108,7 +108,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
         }
         //解析响应
         List<ItemDTO> items = response.getBody();*/
-        List<ItemDTO> items = itemClient.getItemsByIds(itemIds);
+        List<ItemDTO> items = itemClient.queryItemsByIds(itemIds);
         if (CollUtils.isEmpty(items)) {
             return;
         }

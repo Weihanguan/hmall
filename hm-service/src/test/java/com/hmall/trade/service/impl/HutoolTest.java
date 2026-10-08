@@ -1,4 +1,4 @@
-package com.hmall.service.impl;
+package com.hmall.trade.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import lombok.AllArgsConstructor;

@@ -14,11 +14,5 @@ import org.springframework.web.client.RestTemplate;
 public class CartApplication {
     public static void main(String[] args) {
         SpringApplication.run(CartApplication.class, args);
-
-    }
-
-    @Bean
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
     }
 }
