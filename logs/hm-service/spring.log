@@ -1,17 +1,8 @@
-18:08:25:491  INFO 3840 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 11.0.32.1 on weihanguan with PID 3840 (D:\JavaProject\hmall\hm-service\target\classes started by Administrator in D:\JavaProject\hmall)
-18:08:25:496 DEBUG 3840 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
-18:08:25:496  INFO 3840 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "local"
-18:08:26:116  INFO 3840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-18:08:26:120  INFO 3840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-18:08:26:152  INFO 3840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-18:08:26:542  INFO 3840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-18:08:26:549  INFO 3840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-18:08:26:549  INFO 3840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-18:08:26:637  INFO 3840 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-18:08:26:637  INFO 3840 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1116 ms
-18:08:28:166  INFO 3840 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-18:08:28:467  INFO 3840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-18:08:28:468  INFO 3840 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-18:08:28:469  INFO 3840 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-18:08:28:486  INFO 3840 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-18:08:28:591  INFO 3840 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 3.322 seconds (JVM running for 4.055)
+03:59:35:088  WARN 3840 --- [RMI TCP Accept-0] sun.rmi.transport.tcp                    : RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=55291] throws
+
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:394) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:366) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
